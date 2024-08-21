@@ -6,7 +6,7 @@
     function setColorMode(t){let e=document.documentElement;e.setAttribute("data-color-mode",t);let a=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,s=t;"auto"===t&&(s=a?"dark":"light"),"light"===s?(e.classList.remove("dark"),e.classList.add("light")):(e.classList.remove("light"),e.classList.add("dark"))}
     setColorMode(localStorage._theme||"auto");
   </script><link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=397bb51e" />
-    <link rel="stylesheet" type="text/css" href="../_static/shibuya.css?v=d3bb9062" />
+    <link rel="stylesheet" type="text/css" href="../_static/shibuya.css?v=5117e564" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
@@ -101,17 +101,16 @@
       <i class="i-lucide chevron-down"></i>
     </button>
     <div class="nav-versions-choices"><ul><li><a href="/latest">latest</a></li><li><a href="/main">development</a></li></ul></div>
-  </div><div class="sy-head-socials flex items-center">
-    <a href="https://github.com/litestar-org/advanced-alchemy" aria-label="GitHub">
-      <i class="i-simpleicons github"></i>
-    </a>
-  <a href="https://twitter.com/LitestarAPI" aria-label="X (Twitter)">
-    <i class="i-simpleicons x-twitter"></i>
+  </div><div class="sy-head-socials">
+  <a href="https://github.com/litestar-org/advanced-alchemy" aria-label="GitHub">
+    <i class="i-simpleicons github"></i>
   </a>
-    <a href="https://discord.gg/litestar" aria-label="Discord">
-      <i class="i-simpleicons discord"></i>
-    </a>
-</div></div>
+<a href="https://twitter.com/LitestarAPI" aria-label="X (Twitter)">
+  <i class="i-simpleicons x-twitter"></i>
+</a>
+  <a href="https://discord.gg/litestar" aria-label="Discord">
+    <i class="i-simpleicons discord"></i>
+  </a></div></div>
     </div>
     <div class="sy-head-actions flex items-center shrink-0 print:hidden"><button class="js-theme theme-switch flex items-center"
 data-aria-auto="Switch to light color mode"
@@ -232,76 +231,76 @@ data-aria-dark="Switch to auto color mode">
     </button>
     <div class="sy-scrollbar sy-rside-inner px-6 xl:top-16 xl:sticky xl:pl-0 pt-6 pb-4"><div class="localtoc"><h3>On this page</h3><ul>
 <li><a class="reference internal" href="#advanced_alchemy.filters.BeforeAfter"><code class="docutils literal notranslate"><span class="pre">BeforeAfter</span></code></a><ul>
-<li><a class="reference internal" href="#advanced_alchemy.filters.BeforeAfter.field_name"><code class="docutils literal notranslate"><span class="pre">BeforeAfter.field_name</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.filters.BeforeAfter.before"><code class="docutils literal notranslate"><span class="pre">BeforeAfter.before</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.filters.BeforeAfter.after"><code class="docutils literal notranslate"><span class="pre">BeforeAfter.after</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.filters.BeforeAfter.append_to_statement"><code class="docutils literal notranslate"><span class="pre">BeforeAfter.append_to_statement()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.filters.BeforeAfter.append_to_lambda_statement"><code class="docutils literal notranslate"><span class="pre">BeforeAfter.append_to_lambda_statement()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.filters.BeforeAfter.__init__"><code class="docutils literal notranslate"><span class="pre">BeforeAfter.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.filters.BeforeAfter.field_name"><code class="docutils literal notranslate">field_name</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.filters.BeforeAfter.before"><code class="docutils literal notranslate">before</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.filters.BeforeAfter.after"><code class="docutils literal notranslate">after</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.filters.BeforeAfter.append_to_statement"><code class="docutils literal notranslate">append_to_statement()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.filters.BeforeAfter.append_to_lambda_statement"><code class="docutils literal notranslate">append_to_lambda_statement()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.filters.BeforeAfter.__init__"><code class="docutils literal notranslate">__init__()</span></code></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#advanced_alchemy.filters.CollectionFilter"><code class="docutils literal notranslate"><span class="pre">CollectionFilter</span></code></a><ul>
-<li><a class="reference internal" href="#advanced_alchemy.filters.CollectionFilter.field_name"><code class="docutils literal notranslate"><span class="pre">CollectionFilter.field_name</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.filters.CollectionFilter.values"><code class="docutils literal notranslate"><span class="pre">CollectionFilter.values</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.filters.CollectionFilter.append_to_statement"><code class="docutils literal notranslate"><span class="pre">CollectionFilter.append_to_statement()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.filters.CollectionFilter.append_to_lambda_statement"><code class="docutils literal notranslate"><span class="pre">CollectionFilter.append_to_lambda_statement()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.filters.CollectionFilter.__init__"><code class="docutils literal notranslate"><span class="pre">CollectionFilter.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.filters.CollectionFilter.field_name"><code class="docutils literal notranslate">field_name</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.filters.CollectionFilter.values"><code class="docutils literal notranslate">values</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.filters.CollectionFilter.append_to_statement"><code class="docutils literal notranslate">append_to_statement()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.filters.CollectionFilter.append_to_lambda_statement"><code class="docutils literal notranslate">append_to_lambda_statement()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.filters.CollectionFilter.__init__"><code class="docutils literal notranslate">__init__()</span></code></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#advanced_alchemy.filters.FilterTypes"><code class="docutils literal notranslate"><span class="pre">FilterTypes</span></code></a></li>
 <li><a class="reference internal" href="#advanced_alchemy.filters.LimitOffset"><code class="docutils literal notranslate"><span class="pre">LimitOffset</span></code></a><ul>
-<li><a class="reference internal" href="#advanced_alchemy.filters.LimitOffset.limit"><code class="docutils literal notranslate"><span class="pre">LimitOffset.limit</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.filters.LimitOffset.offset"><code class="docutils literal notranslate"><span class="pre">LimitOffset.offset</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.filters.LimitOffset.append_to_statement"><code class="docutils literal notranslate"><span class="pre">LimitOffset.append_to_statement()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.filters.LimitOffset.append_to_lambda_statement"><code class="docutils literal notranslate"><span class="pre">LimitOffset.append_to_lambda_statement()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.filters.LimitOffset.__init__"><code class="docutils literal notranslate"><span class="pre">LimitOffset.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.filters.LimitOffset.limit"><code class="docutils literal notranslate">limit</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.filters.LimitOffset.offset"><code class="docutils literal notranslate">offset</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.filters.LimitOffset.append_to_statement"><code class="docutils literal notranslate">append_to_statement()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.filters.LimitOffset.append_to_lambda_statement"><code class="docutils literal notranslate">append_to_lambda_statement()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.filters.LimitOffset.__init__"><code class="docutils literal notranslate">__init__()</span></code></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#advanced_alchemy.filters.OrderBy"><code class="docutils literal notranslate"><span class="pre">OrderBy</span></code></a><ul>
-<li><a class="reference internal" href="#advanced_alchemy.filters.OrderBy.field_name"><code class="docutils literal notranslate"><span class="pre">OrderBy.field_name</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.filters.OrderBy.sort_order"><code class="docutils literal notranslate"><span class="pre">OrderBy.sort_order</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.filters.OrderBy.__init__"><code class="docutils literal notranslate"><span class="pre">OrderBy.__init__()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.filters.OrderBy.append_to_statement"><code class="docutils literal notranslate"><span class="pre">OrderBy.append_to_statement()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.filters.OrderBy.append_to_lambda_statement"><code class="docutils literal notranslate"><span class="pre">OrderBy.append_to_lambda_statement()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.filters.OrderBy.field_name"><code class="docutils literal notranslate">field_name</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.filters.OrderBy.sort_order"><code class="docutils literal notranslate">sort_order</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.filters.OrderBy.__init__"><code class="docutils literal notranslate">__init__()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.filters.OrderBy.append_to_statement"><code class="docutils literal notranslate">append_to_statement()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.filters.OrderBy.append_to_lambda_statement"><code class="docutils literal notranslate">append_to_lambda_statement()</span></code></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#advanced_alchemy.filters.SearchFilter"><code class="docutils literal notranslate"><span class="pre">SearchFilter</span></code></a><ul>
-<li><a class="reference internal" href="#advanced_alchemy.filters.SearchFilter.__init__"><code class="docutils literal notranslate"><span class="pre">SearchFilter.__init__()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.filters.SearchFilter.field_name"><code class="docutils literal notranslate"><span class="pre">SearchFilter.field_name</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.filters.SearchFilter.value"><code class="docutils literal notranslate"><span class="pre">SearchFilter.value</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.filters.SearchFilter.ignore_case"><code class="docutils literal notranslate"><span class="pre">SearchFilter.ignore_case</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.filters.SearchFilter.normalized_field_names"><code class="docutils literal notranslate"><span class="pre">SearchFilter.normalized_field_names</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.filters.SearchFilter.get_search_clauses"><code class="docutils literal notranslate"><span class="pre">SearchFilter.get_search_clauses()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.filters.SearchFilter.append_to_statement"><code class="docutils literal notranslate"><span class="pre">SearchFilter.append_to_statement()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.filters.SearchFilter.append_to_lambda_statement"><code class="docutils literal notranslate"><span class="pre">SearchFilter.append_to_lambda_statement()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.filters.SearchFilter.__init__"><code class="docutils literal notranslate">__init__()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.filters.SearchFilter.field_name"><code class="docutils literal notranslate">field_name</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.filters.SearchFilter.value"><code class="docutils literal notranslate">value</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.filters.SearchFilter.ignore_case"><code class="docutils literal notranslate">ignore_case</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.filters.SearchFilter.normalized_field_names"><code class="docutils literal notranslate">normalized_field_names</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.filters.SearchFilter.get_search_clauses"><code class="docutils literal notranslate">get_search_clauses()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.filters.SearchFilter.append_to_statement"><code class="docutils literal notranslate">append_to_statement()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.filters.SearchFilter.append_to_lambda_statement"><code class="docutils literal notranslate">append_to_lambda_statement()</span></code></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#advanced_alchemy.filters.NotInCollectionFilter"><code class="docutils literal notranslate"><span class="pre">NotInCollectionFilter</span></code></a><ul>
-<li><a class="reference internal" href="#advanced_alchemy.filters.NotInCollectionFilter.field_name"><code class="docutils literal notranslate"><span class="pre">NotInCollectionFilter.field_name</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.filters.NotInCollectionFilter.values"><code class="docutils literal notranslate"><span class="pre">NotInCollectionFilter.values</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.filters.NotInCollectionFilter.append_to_statement"><code class="docutils literal notranslate"><span class="pre">NotInCollectionFilter.append_to_statement()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.filters.NotInCollectionFilter.append_to_lambda_statement"><code class="docutils literal notranslate"><span class="pre">NotInCollectionFilter.append_to_lambda_statement()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.filters.NotInCollectionFilter.__init__"><code class="docutils literal notranslate"><span class="pre">NotInCollectionFilter.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.filters.NotInCollectionFilter.field_name"><code class="docutils literal notranslate">field_name</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.filters.NotInCollectionFilter.values"><code class="docutils literal notranslate">values</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.filters.NotInCollectionFilter.append_to_statement"><code class="docutils literal notranslate">append_to_statement()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.filters.NotInCollectionFilter.append_to_lambda_statement"><code class="docutils literal notranslate">append_to_lambda_statement()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.filters.NotInCollectionFilter.__init__"><code class="docutils literal notranslate">__init__()</span></code></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#advanced_alchemy.filters.OnBeforeAfter"><code class="docutils literal notranslate"><span class="pre">OnBeforeAfter</span></code></a><ul>
-<li><a class="reference internal" href="#advanced_alchemy.filters.OnBeforeAfter.field_name"><code class="docutils literal notranslate"><span class="pre">OnBeforeAfter.field_name</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.filters.OnBeforeAfter.on_or_before"><code class="docutils literal notranslate"><span class="pre">OnBeforeAfter.on_or_before</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.filters.OnBeforeAfter.on_or_after"><code class="docutils literal notranslate"><span class="pre">OnBeforeAfter.on_or_after</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.filters.OnBeforeAfter.append_to_statement"><code class="docutils literal notranslate"><span class="pre">OnBeforeAfter.append_to_statement()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.filters.OnBeforeAfter.append_to_lambda_statement"><code class="docutils literal notranslate"><span class="pre">OnBeforeAfter.append_to_lambda_statement()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.filters.OnBeforeAfter.__init__"><code class="docutils literal notranslate"><span class="pre">OnBeforeAfter.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.filters.OnBeforeAfter.field_name"><code class="docutils literal notranslate">field_name</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.filters.OnBeforeAfter.on_or_before"><code class="docutils literal notranslate">on_or_before</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.filters.OnBeforeAfter.on_or_after"><code class="docutils literal notranslate">on_or_after</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.filters.OnBeforeAfter.append_to_statement"><code class="docutils literal notranslate">append_to_statement()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.filters.OnBeforeAfter.append_to_lambda_statement"><code class="docutils literal notranslate">append_to_lambda_statement()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.filters.OnBeforeAfter.__init__"><code class="docutils literal notranslate">__init__()</span></code></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#advanced_alchemy.filters.NotInSearchFilter"><code class="docutils literal notranslate"><span class="pre">NotInSearchFilter</span></code></a><ul>
-<li><a class="reference internal" href="#advanced_alchemy.filters.NotInSearchFilter.__init__"><code class="docutils literal notranslate"><span class="pre">NotInSearchFilter.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.filters.NotInSearchFilter.__init__"><code class="docutils literal notranslate">__init__()</span></code></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#advanced_alchemy.filters.PaginationFilter"><code class="docutils literal notranslate"><span class="pre">PaginationFilter</span></code></a></li>
 <li><a class="reference internal" href="#advanced_alchemy.filters.InAnyFilter"><code class="docutils literal notranslate"><span class="pre">InAnyFilter</span></code></a></li>
 <li><a class="reference internal" href="#advanced_alchemy.filters.StatementFilter"><code class="docutils literal notranslate"><span class="pre">StatementFilter</span></code></a><ul>
-<li><a class="reference internal" href="#advanced_alchemy.filters.StatementFilter.append_to_statement"><code class="docutils literal notranslate"><span class="pre">StatementFilter.append_to_statement()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.filters.StatementFilter.append_to_lambda_statement"><code class="docutils literal notranslate"><span class="pre">StatementFilter.append_to_lambda_statement()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.filters.StatementFilter.append_to_statement"><code class="docutils literal notranslate">append_to_statement()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.filters.StatementFilter.append_to_lambda_statement"><code class="docutils literal notranslate">append_to_lambda_statement()</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -310,7 +309,7 @@ data-aria-dark="Switch to auto color mode">
   <span class="w-8 flex items-center justify-around shrink-0 text-3xl">
     <i class="i-simpleicons github"></i>
   </span>
-  <span class="flex-grow px-2">
+  <span class="flex-grow px-2 break-all">
     <span>litestar-org/advanced-alchemy</span>
     <span class="flex text-sm repo-stats-count">
       <span class="flex items-center pr-3">

@@ -6,7 +6,7 @@
     function setColorMode(t){let e=document.documentElement;e.setAttribute("data-color-mode",t);let a=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,s=t;"auto"===t&&(s=a?"dark":"light"),"light"===s?(e.classList.remove("dark"),e.classList.add("light")):(e.classList.remove("light"),e.classList.add("dark"))}
     setColorMode(localStorage._theme||"auto");
   </script><link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=397bb51e" />
-    <link rel="stylesheet" type="text/css" href="../_static/shibuya.css?v=d3bb9062" />
+    <link rel="stylesheet" type="text/css" href="../_static/shibuya.css?v=5117e564" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
@@ -101,17 +101,16 @@
       <i class="i-lucide chevron-down"></i>
     </button>
     <div class="nav-versions-choices"><ul><li><a href="/latest">latest</a></li><li><a href="/main">development</a></li></ul></div>
-  </div><div class="sy-head-socials flex items-center">
-    <a href="https://github.com/litestar-org/advanced-alchemy" aria-label="GitHub">
-      <i class="i-simpleicons github"></i>
-    </a>
-  <a href="https://twitter.com/LitestarAPI" aria-label="X (Twitter)">
-    <i class="i-simpleicons x-twitter"></i>
+  </div><div class="sy-head-socials">
+  <a href="https://github.com/litestar-org/advanced-alchemy" aria-label="GitHub">
+    <i class="i-simpleicons github"></i>
   </a>
-    <a href="https://discord.gg/litestar" aria-label="Discord">
-      <i class="i-simpleicons discord"></i>
-    </a>
-</div></div>
+<a href="https://twitter.com/LitestarAPI" aria-label="X (Twitter)">
+  <i class="i-simpleicons x-twitter"></i>
+</a>
+  <a href="https://discord.gg/litestar" aria-label="Discord">
+    <i class="i-simpleicons discord"></i>
+  </a></div></div>
     </div>
     <div class="sy-head-actions flex items-center shrink-0 print:hidden"><button class="js-theme theme-switch flex items-center"
 data-aria-auto="Switch to light color mode"
@@ -232,80 +231,80 @@ data-aria-dark="Switch to auto color mode">
     </button>
     <div class="sy-scrollbar sy-rside-inner px-6 xl:top-16 xl:sticky xl:pl-0 pt-6 pb-4"><div class="localtoc"><h3>On this page</h3><ul>
 <li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemyAsyncRepositoryService"><code class="docutils literal notranslate"><span class="pre">SQLAlchemyAsyncRepositoryService</span></code></a><ul>
-<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemyAsyncRepositoryService.create"><code class="docutils literal notranslate"><span class="pre">SQLAlchemyAsyncRepositoryService.create()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemyAsyncRepositoryService.create_many"><code class="docutils literal notranslate"><span class="pre">SQLAlchemyAsyncRepositoryService.create_many()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemyAsyncRepositoryService.update"><code class="docutils literal notranslate"><span class="pre">SQLAlchemyAsyncRepositoryService.update()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemyAsyncRepositoryService.update_many"><code class="docutils literal notranslate"><span class="pre">SQLAlchemyAsyncRepositoryService.update_many()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemyAsyncRepositoryService.upsert"><code class="docutils literal notranslate"><span class="pre">SQLAlchemyAsyncRepositoryService.upsert()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemyAsyncRepositoryService.upsert_many"><code class="docutils literal notranslate"><span class="pre">SQLAlchemyAsyncRepositoryService.upsert_many()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemyAsyncRepositoryService.get_or_upsert"><code class="docutils literal notranslate"><span class="pre">SQLAlchemyAsyncRepositoryService.get_or_upsert()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemyAsyncRepositoryService.get_and_update"><code class="docutils literal notranslate"><span class="pre">SQLAlchemyAsyncRepositoryService.get_and_update()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemyAsyncRepositoryService.delete"><code class="docutils literal notranslate"><span class="pre">SQLAlchemyAsyncRepositoryService.delete()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemyAsyncRepositoryService.delete_many"><code class="docutils literal notranslate"><span class="pre">SQLAlchemyAsyncRepositoryService.delete_many()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemyAsyncRepositoryService.delete_where"><code class="docutils literal notranslate"><span class="pre">SQLAlchemyAsyncRepositoryService.delete_where()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemyAsyncRepositoryService.create"><code class="docutils literal notranslate">create()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemyAsyncRepositoryService.create_many"><code class="docutils literal notranslate">create_many()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemyAsyncRepositoryService.update"><code class="docutils literal notranslate">update()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemyAsyncRepositoryService.update_many"><code class="docutils literal notranslate">update_many()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemyAsyncRepositoryService.upsert"><code class="docutils literal notranslate">upsert()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemyAsyncRepositoryService.upsert_many"><code class="docutils literal notranslate">upsert_many()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemyAsyncRepositoryService.get_or_upsert"><code class="docutils literal notranslate">get_or_upsert()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemyAsyncRepositoryService.get_and_update"><code class="docutils literal notranslate">get_and_update()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemyAsyncRepositoryService.delete"><code class="docutils literal notranslate">delete()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemyAsyncRepositoryService.delete_many"><code class="docutils literal notranslate">delete_many()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemyAsyncRepositoryService.delete_where"><code class="docutils literal notranslate">delete_where()</span></code></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemyAsyncQueryService"><code class="docutils literal notranslate"><span class="pre">SQLAlchemyAsyncQueryService</span></code></a><ul>
-<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemyAsyncQueryService.__init__"><code class="docutils literal notranslate"><span class="pre">SQLAlchemyAsyncQueryService.__init__()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemyAsyncQueryService.new"><code class="docutils literal notranslate"><span class="pre">SQLAlchemyAsyncQueryService.new()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemyAsyncQueryService.__init__"><code class="docutils literal notranslate">__init__()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemyAsyncQueryService.new"><code class="docutils literal notranslate">new()</span></code></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemySyncQueryService"><code class="docutils literal notranslate"><span class="pre">SQLAlchemySyncQueryService</span></code></a><ul>
-<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemySyncQueryService.__init__"><code class="docutils literal notranslate"><span class="pre">SQLAlchemySyncQueryService.__init__()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemySyncQueryService.new"><code class="docutils literal notranslate"><span class="pre">SQLAlchemySyncQueryService.new()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemySyncQueryService.__init__"><code class="docutils literal notranslate">__init__()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemySyncQueryService.new"><code class="docutils literal notranslate">new()</span></code></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemySyncRepositoryReadService"><code class="docutils literal notranslate"><span class="pre">SQLAlchemySyncRepositoryReadService</span></code></a><ul>
-<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemySyncRepositoryReadService.__init__"><code class="docutils literal notranslate"><span class="pre">SQLAlchemySyncRepositoryReadService.__init__()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemySyncRepositoryReadService.count"><code class="docutils literal notranslate"><span class="pre">SQLAlchemySyncRepositoryReadService.count()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemySyncRepositoryReadService.exists"><code class="docutils literal notranslate"><span class="pre">SQLAlchemySyncRepositoryReadService.exists()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemySyncRepositoryReadService.get"><code class="docutils literal notranslate"><span class="pre">SQLAlchemySyncRepositoryReadService.get()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemySyncRepositoryReadService.get_one"><code class="docutils literal notranslate"><span class="pre">SQLAlchemySyncRepositoryReadService.get_one()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemySyncRepositoryReadService.get_one_or_none"><code class="docutils literal notranslate"><span class="pre">SQLAlchemySyncRepositoryReadService.get_one_or_none()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemySyncRepositoryReadService.to_model"><code class="docutils literal notranslate"><span class="pre">SQLAlchemySyncRepositoryReadService.to_model()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemySyncRepositoryReadService.list_and_count"><code class="docutils literal notranslate"><span class="pre">SQLAlchemySyncRepositoryReadService.list_and_count()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemySyncRepositoryReadService.new"><code class="docutils literal notranslate"><span class="pre">SQLAlchemySyncRepositoryReadService.new()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemySyncRepositoryReadService.list"><code class="docutils literal notranslate"><span class="pre">SQLAlchemySyncRepositoryReadService.list()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemySyncRepositoryReadService.__init__"><code class="docutils literal notranslate">__init__()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemySyncRepositoryReadService.count"><code class="docutils literal notranslate">count()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemySyncRepositoryReadService.exists"><code class="docutils literal notranslate">exists()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemySyncRepositoryReadService.get"><code class="docutils literal notranslate">get()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemySyncRepositoryReadService.get_one"><code class="docutils literal notranslate">get_one()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemySyncRepositoryReadService.get_one_or_none"><code class="docutils literal notranslate">get_one_or_none()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemySyncRepositoryReadService.to_model"><code class="docutils literal notranslate">to_model()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemySyncRepositoryReadService.list_and_count"><code class="docutils literal notranslate">list_and_count()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemySyncRepositoryReadService.new"><code class="docutils literal notranslate">new()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemySyncRepositoryReadService.list"><code class="docutils literal notranslate">list()</span></code></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemySyncRepositoryService"><code class="docutils literal notranslate"><span class="pre">SQLAlchemySyncRepositoryService</span></code></a><ul>
-<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemySyncRepositoryService.create"><code class="docutils literal notranslate"><span class="pre">SQLAlchemySyncRepositoryService.create()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemySyncRepositoryService.create_many"><code class="docutils literal notranslate"><span class="pre">SQLAlchemySyncRepositoryService.create_many()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemySyncRepositoryService.update"><code class="docutils literal notranslate"><span class="pre">SQLAlchemySyncRepositoryService.update()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemySyncRepositoryService.update_many"><code class="docutils literal notranslate"><span class="pre">SQLAlchemySyncRepositoryService.update_many()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemySyncRepositoryService.upsert"><code class="docutils literal notranslate"><span class="pre">SQLAlchemySyncRepositoryService.upsert()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemySyncRepositoryService.upsert_many"><code class="docutils literal notranslate"><span class="pre">SQLAlchemySyncRepositoryService.upsert_many()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemySyncRepositoryService.get_or_upsert"><code class="docutils literal notranslate"><span class="pre">SQLAlchemySyncRepositoryService.get_or_upsert()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemySyncRepositoryService.get_and_update"><code class="docutils literal notranslate"><span class="pre">SQLAlchemySyncRepositoryService.get_and_update()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemySyncRepositoryService.delete"><code class="docutils literal notranslate"><span class="pre">SQLAlchemySyncRepositoryService.delete()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemySyncRepositoryService.delete_many"><code class="docutils literal notranslate"><span class="pre">SQLAlchemySyncRepositoryService.delete_many()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemySyncRepositoryService.delete_where"><code class="docutils literal notranslate"><span class="pre">SQLAlchemySyncRepositoryService.delete_where()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemySyncRepositoryService.create"><code class="docutils literal notranslate">create()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemySyncRepositoryService.create_many"><code class="docutils literal notranslate">create_many()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemySyncRepositoryService.update"><code class="docutils literal notranslate">update()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemySyncRepositoryService.update_many"><code class="docutils literal notranslate">update_many()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemySyncRepositoryService.upsert"><code class="docutils literal notranslate">upsert()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemySyncRepositoryService.upsert_many"><code class="docutils literal notranslate">upsert_many()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemySyncRepositoryService.get_or_upsert"><code class="docutils literal notranslate">get_or_upsert()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemySyncRepositoryService.get_and_update"><code class="docutils literal notranslate">get_and_update()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemySyncRepositoryService.delete"><code class="docutils literal notranslate">delete()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemySyncRepositoryService.delete_many"><code class="docutils literal notranslate">delete_many()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemySyncRepositoryService.delete_where"><code class="docutils literal notranslate">delete_where()</span></code></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemyAsyncRepositoryReadService"><code class="docutils literal notranslate"><span class="pre">SQLAlchemyAsyncRepositoryReadService</span></code></a><ul>
-<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemyAsyncRepositoryReadService.__init__"><code class="docutils literal notranslate"><span class="pre">SQLAlchemyAsyncRepositoryReadService.__init__()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemyAsyncRepositoryReadService.count"><code class="docutils literal notranslate"><span class="pre">SQLAlchemyAsyncRepositoryReadService.count()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemyAsyncRepositoryReadService.exists"><code class="docutils literal notranslate"><span class="pre">SQLAlchemyAsyncRepositoryReadService.exists()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemyAsyncRepositoryReadService.get"><code class="docutils literal notranslate"><span class="pre">SQLAlchemyAsyncRepositoryReadService.get()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemyAsyncRepositoryReadService.get_one"><code class="docutils literal notranslate"><span class="pre">SQLAlchemyAsyncRepositoryReadService.get_one()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemyAsyncRepositoryReadService.get_one_or_none"><code class="docutils literal notranslate"><span class="pre">SQLAlchemyAsyncRepositoryReadService.get_one_or_none()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemyAsyncRepositoryReadService.to_model"><code class="docutils literal notranslate"><span class="pre">SQLAlchemyAsyncRepositoryReadService.to_model()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemyAsyncRepositoryReadService.list_and_count"><code class="docutils literal notranslate"><span class="pre">SQLAlchemyAsyncRepositoryReadService.list_and_count()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemyAsyncRepositoryReadService.new"><code class="docutils literal notranslate"><span class="pre">SQLAlchemyAsyncRepositoryReadService.new()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemyAsyncRepositoryReadService.list"><code class="docutils literal notranslate"><span class="pre">SQLAlchemyAsyncRepositoryReadService.list()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemyAsyncRepositoryReadService.__init__"><code class="docutils literal notranslate">__init__()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemyAsyncRepositoryReadService.count"><code class="docutils literal notranslate">count()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemyAsyncRepositoryReadService.exists"><code class="docutils literal notranslate">exists()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemyAsyncRepositoryReadService.get"><code class="docutils literal notranslate">get()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemyAsyncRepositoryReadService.get_one"><code class="docutils literal notranslate">get_one()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemyAsyncRepositoryReadService.get_one_or_none"><code class="docutils literal notranslate">get_one_or_none()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemyAsyncRepositoryReadService.to_model"><code class="docutils literal notranslate">to_model()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemyAsyncRepositoryReadService.list_and_count"><code class="docutils literal notranslate">list_and_count()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemyAsyncRepositoryReadService.new"><code class="docutils literal notranslate">new()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.SQLAlchemyAsyncRepositoryReadService.list"><code class="docutils literal notranslate">list()</span></code></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#advanced_alchemy.service.OffsetPagination"><code class="docutils literal notranslate"><span class="pre">OffsetPagination</span></code></a><ul>
-<li><a class="reference internal" href="#advanced_alchemy.service.OffsetPagination.items"><code class="docutils literal notranslate"><span class="pre">OffsetPagination.items</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.service.OffsetPagination.limit"><code class="docutils literal notranslate"><span class="pre">OffsetPagination.limit</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.service.OffsetPagination.__init__"><code class="docutils literal notranslate"><span class="pre">OffsetPagination.__init__()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.service.OffsetPagination.offset"><code class="docutils literal notranslate"><span class="pre">OffsetPagination.offset</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.service.OffsetPagination.total"><code class="docutils literal notranslate"><span class="pre">OffsetPagination.total</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.OffsetPagination.items"><code class="docutils literal notranslate">items</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.OffsetPagination.limit"><code class="docutils literal notranslate">limit</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.OffsetPagination.__init__"><code class="docutils literal notranslate">__init__()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.OffsetPagination.offset"><code class="docutils literal notranslate">offset</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.OffsetPagination.total"><code class="docutils literal notranslate">total</span></code></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#advanced_alchemy.service.find_filter"><code class="docutils literal notranslate"><span class="pre">find_filter()</span></code></a></li>
 <li><a class="reference internal" href="#advanced_alchemy.service.ResultConverter"><code class="docutils literal notranslate"><span class="pre">ResultConverter</span></code></a><ul>
-<li><a class="reference internal" href="#advanced_alchemy.service.ResultConverter.to_schema"><code class="docutils literal notranslate"><span class="pre">ResultConverter.to_schema()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.service.ResultConverter.to_schema"><code class="docutils literal notranslate">to_schema()</span></code></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#advanced_alchemy.service.model_from_dict"><code class="docutils literal notranslate"><span class="pre">model_from_dict()</span></code></a></li>
@@ -317,7 +316,7 @@ data-aria-dark="Switch to auto color mode">
   <span class="w-8 flex items-center justify-around shrink-0 text-3xl">
     <i class="i-simpleicons github"></i>
   </span>
-  <span class="flex-grow px-2">
+  <span class="flex-grow px-2 break-all">
     <span>litestar-org/advanced-alchemy</span>
     <span class="flex text-sm repo-stats-count">
       <span class="flex items-center pr-3">

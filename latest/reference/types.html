@@ -6,7 +6,7 @@
     function setColorMode(t){let e=document.documentElement;e.setAttribute("data-color-mode",t);let a=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,s=t;"auto"===t&&(s=a?"dark":"light"),"light"===s?(e.classList.remove("dark"),e.classList.add("light")):(e.classList.remove("light"),e.classList.add("dark"))}
     setColorMode(localStorage._theme||"auto");
   </script><link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=397bb51e" />
-    <link rel="stylesheet" type="text/css" href="../_static/shibuya.css?v=d3bb9062" />
+    <link rel="stylesheet" type="text/css" href="../_static/shibuya.css?v=5117e564" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
@@ -101,17 +101,16 @@
       <i class="i-lucide chevron-down"></i>
     </button>
     <div class="nav-versions-choices"><ul><li><a href="/latest">latest</a></li><li><a href="/main">development</a></li></ul></div>
-  </div><div class="sy-head-socials flex items-center">
-    <a href="https://github.com/litestar-org/advanced-alchemy" aria-label="GitHub">
-      <i class="i-simpleicons github"></i>
-    </a>
-  <a href="https://twitter.com/LitestarAPI" aria-label="X (Twitter)">
-    <i class="i-simpleicons x-twitter"></i>
+  </div><div class="sy-head-socials">
+  <a href="https://github.com/litestar-org/advanced-alchemy" aria-label="GitHub">
+    <i class="i-simpleicons github"></i>
   </a>
-    <a href="https://discord.gg/litestar" aria-label="Discord">
-      <i class="i-simpleicons discord"></i>
-    </a>
-</div></div>
+<a href="https://twitter.com/LitestarAPI" aria-label="X (Twitter)">
+  <i class="i-simpleicons x-twitter"></i>
+</a>
+  <a href="https://discord.gg/litestar" aria-label="Discord">
+    <i class="i-simpleicons discord"></i>
+  </a></div></div>
     </div>
     <div class="sy-head-actions flex items-center shrink-0 print:hidden"><button class="js-theme theme-switch flex items-center"
 data-aria-auto="Switch to light color mode"
@@ -232,47 +231,47 @@ data-aria-dark="Switch to auto color mode">
     </button>
     <div class="sy-scrollbar sy-rside-inner px-6 xl:top-16 xl:sticky xl:pl-0 pt-6 pb-4"><div class="localtoc"><h3>On this page</h3><ul>
 <li><a class="reference internal" href="#advanced_alchemy.types.DateTimeUTC"><code class="docutils literal notranslate"><span class="pre">DateTimeUTC</span></code></a><ul>
-<li><a class="reference internal" href="#advanced_alchemy.types.DateTimeUTC.cache_ok"><code class="docutils literal notranslate"><span class="pre">DateTimeUTC.cache_ok</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.types.DateTimeUTC.python_type"><code class="docutils literal notranslate"><span class="pre">DateTimeUTC.python_type</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.types.DateTimeUTC.process_bind_param"><code class="docutils literal notranslate"><span class="pre">DateTimeUTC.process_bind_param()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.types.DateTimeUTC.process_result_value"><code class="docutils literal notranslate"><span class="pre">DateTimeUTC.process_result_value()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.types.DateTimeUTC.cache_ok"><code class="docutils literal notranslate">cache_ok</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.types.DateTimeUTC.python_type"><code class="docutils literal notranslate">python_type</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.types.DateTimeUTC.process_bind_param"><code class="docutils literal notranslate">process_bind_param()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.types.DateTimeUTC.process_result_value"><code class="docutils literal notranslate">process_result_value()</span></code></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#advanced_alchemy.types.ORA_JSONB"><code class="docutils literal notranslate"><span class="pre">ORA_JSONB</span></code></a><ul>
-<li><a class="reference internal" href="#advanced_alchemy.types.ORA_JSONB.impl"><code class="docutils literal notranslate"><span class="pre">ORA_JSONB.impl</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.types.ORA_JSONB.cache_ok"><code class="docutils literal notranslate"><span class="pre">ORA_JSONB.cache_ok</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.types.ORA_JSONB.python_type"><code class="docutils literal notranslate"><span class="pre">ORA_JSONB.python_type</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.types.ORA_JSONB.__init__"><code class="docutils literal notranslate"><span class="pre">ORA_JSONB.__init__()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.types.ORA_JSONB.coerce_compared_value"><code class="docutils literal notranslate"><span class="pre">ORA_JSONB.coerce_compared_value()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.types.ORA_JSONB.load_dialect_impl"><code class="docutils literal notranslate"><span class="pre">ORA_JSONB.load_dialect_impl()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.types.ORA_JSONB.process_bind_param"><code class="docutils literal notranslate"><span class="pre">ORA_JSONB.process_bind_param()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.types.ORA_JSONB.process_result_value"><code class="docutils literal notranslate"><span class="pre">ORA_JSONB.process_result_value()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.types.ORA_JSONB.impl"><code class="docutils literal notranslate">impl</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.types.ORA_JSONB.cache_ok"><code class="docutils literal notranslate">cache_ok</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.types.ORA_JSONB.python_type"><code class="docutils literal notranslate">python_type</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.types.ORA_JSONB.__init__"><code class="docutils literal notranslate">__init__()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.types.ORA_JSONB.coerce_compared_value"><code class="docutils literal notranslate">coerce_compared_value()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.types.ORA_JSONB.load_dialect_impl"><code class="docutils literal notranslate">load_dialect_impl()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.types.ORA_JSONB.process_bind_param"><code class="docutils literal notranslate">process_bind_param()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.types.ORA_JSONB.process_result_value"><code class="docutils literal notranslate">process_result_value()</span></code></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#advanced_alchemy.types.GUID"><code class="docutils literal notranslate"><span class="pre">GUID</span></code></a><ul>
-<li><a class="reference internal" href="#advanced_alchemy.types.GUID.cache_ok"><code class="docutils literal notranslate"><span class="pre">GUID.cache_ok</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.types.GUID.python_type"><code class="docutils literal notranslate"><span class="pre">GUID.python_type</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.types.GUID.__init__"><code class="docutils literal notranslate"><span class="pre">GUID.__init__()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.types.GUID.load_dialect_impl"><code class="docutils literal notranslate"><span class="pre">GUID.load_dialect_impl()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.types.GUID.process_bind_param"><code class="docutils literal notranslate"><span class="pre">GUID.process_bind_param()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.types.GUID.process_result_value"><code class="docutils literal notranslate"><span class="pre">GUID.process_result_value()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.types.GUID.compare_values"><code class="docutils literal notranslate"><span class="pre">GUID.compare_values()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.types.GUID.cache_ok"><code class="docutils literal notranslate">cache_ok</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.types.GUID.python_type"><code class="docutils literal notranslate">python_type</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.types.GUID.__init__"><code class="docutils literal notranslate">__init__()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.types.GUID.load_dialect_impl"><code class="docutils literal notranslate">load_dialect_impl()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.types.GUID.process_bind_param"><code class="docutils literal notranslate">process_bind_param()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.types.GUID.process_result_value"><code class="docutils literal notranslate">process_result_value()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.types.GUID.compare_values"><code class="docutils literal notranslate">compare_values()</span></code></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#advanced_alchemy.types.EncryptedString"><code class="docutils literal notranslate"><span class="pre">EncryptedString</span></code></a><ul>
-<li><a class="reference internal" href="#advanced_alchemy.types.EncryptedString.impl"><code class="docutils literal notranslate"><span class="pre">EncryptedString.impl</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.types.EncryptedString.cache_ok"><code class="docutils literal notranslate"><span class="pre">EncryptedString.cache_ok</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.types.EncryptedString.__init__"><code class="docutils literal notranslate"><span class="pre">EncryptedString.__init__()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.types.EncryptedString.python_type"><code class="docutils literal notranslate"><span class="pre">EncryptedString.python_type</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.types.EncryptedString.load_dialect_impl"><code class="docutils literal notranslate"><span class="pre">EncryptedString.load_dialect_impl()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.types.EncryptedString.process_bind_param"><code class="docutils literal notranslate"><span class="pre">EncryptedString.process_bind_param()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.types.EncryptedString.process_result_value"><code class="docutils literal notranslate"><span class="pre">EncryptedString.process_result_value()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.types.EncryptedString.impl"><code class="docutils literal notranslate">impl</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.types.EncryptedString.cache_ok"><code class="docutils literal notranslate">cache_ok</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.types.EncryptedString.__init__"><code class="docutils literal notranslate">__init__()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.types.EncryptedString.python_type"><code class="docutils literal notranslate">python_type</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.types.EncryptedString.load_dialect_impl"><code class="docutils literal notranslate">load_dialect_impl()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.types.EncryptedString.process_bind_param"><code class="docutils literal notranslate">process_bind_param()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.types.EncryptedString.process_result_value"><code class="docutils literal notranslate">process_result_value()</span></code></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#advanced_alchemy.types.EncryptedText"><code class="docutils literal notranslate"><span class="pre">EncryptedText</span></code></a><ul>
-<li><a class="reference internal" href="#advanced_alchemy.types.EncryptedText.impl"><code class="docutils literal notranslate"><span class="pre">EncryptedText.impl</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.types.EncryptedText.cache_ok"><code class="docutils literal notranslate"><span class="pre">EncryptedText.cache_ok</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.types.EncryptedText.load_dialect_impl"><code class="docutils literal notranslate"><span class="pre">EncryptedText.load_dialect_impl()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.types.EncryptedText.impl"><code class="docutils literal notranslate">impl</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.types.EncryptedText.cache_ok"><code class="docutils literal notranslate">cache_ok</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.types.EncryptedText.load_dialect_impl"><code class="docutils literal notranslate">load_dialect_impl()</span></code></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#advanced_alchemy.types.EncryptionBackend"><code class="docutils literal notranslate"><span class="pre">EncryptionBackend</span></code></a></li>
@@ -284,7 +283,7 @@ data-aria-dark="Switch to auto color mode">
   <span class="w-8 flex items-center justify-around shrink-0 text-3xl">
     <i class="i-simpleicons github"></i>
   </span>
-  <span class="flex-grow px-2">
+  <span class="flex-grow px-2 break-all">
     <span>litestar-org/advanced-alchemy</span>
     <span class="flex text-sm repo-stats-count">
       <span class="flex items-center pr-3">
@@ -1214,7 +1213,7 @@ and <code class="xref py py-class docutils literal notranslate"><span class="pre
 
 <dl class="py method">
 <dt class="sig sig-object py" id="advanced_alchemy.types.EncryptedString.__init__">
-<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key:</span> <span class="pre">str</span> <span class="pre">|</span> <span class="pre">bytes</span> <span class="pre">|</span> <span class="pre">~typing.Callable[[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">str</span> <span class="pre">|</span> <span class="pre">bytes]</span> <span class="pre">=</span> <span class="pre">b'\x18E\x10\xcaJ\xe5\xa3&#64;\x0f\xc7&gt;VD\xd1\xe4\n\x10\xc7\x92&#64;\xb0\x9d\n2q\x0b\x06*\x87rCM'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">backend:</span> <span class="pre">type[advanced_alchemy.types.encrypted_string.EncryptionBackend]</span> <span class="pre">=</span> <span class="pre">&lt;class</span> <span class="pre">'advanced_alchemy.types.encrypted_string.FernetBackend'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**kwargs:</span> <span class="pre">~typing.Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></span></span><a class="reference internal" href="../_modules/advanced_alchemy/types/encrypted_string.html#EncryptedString.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#advanced_alchemy.types.EncryptedString.__init__" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key:</span> <span class="pre">str</span> <span class="pre">|</span> <span class="pre">bytes</span> <span class="pre">|</span> <span class="pre">~typing.Callable[[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">str</span> <span class="pre">|</span> <span class="pre">bytes]</span> <span class="pre">=</span> <span class="pre">b'u{vY\xb2z\xbbX4\x89\x00\xfc\t-\x0c2NN\x184\x13\xf7\xe0\x03\xcd\xd0D\xdc\xb5</span> <span class="pre">jK'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">backend:</span> <span class="pre">type[advanced_alchemy.types.encrypted_string.EncryptionBackend]</span> <span class="pre">=</span> <span class="pre">&lt;class</span> <span class="pre">'advanced_alchemy.types.encrypted_string.FernetBackend'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**kwargs:</span> <span class="pre">~typing.Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.12)"><span class="pre">None</span></a></span></span><a class="reference internal" href="../_modules/advanced_alchemy/types/encrypted_string.html#EncryptedString.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#advanced_alchemy.types.EncryptedString.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>Construct a <code class="xref py py-class docutils literal notranslate"><span class="pre">TypeDecorator</span></code>.</p>
 <p>Arguments sent here are passed to the constructor
 of the class assigned to the <code class="docutils literal notranslate"><span class="pre">impl</span></code> class level attribute,

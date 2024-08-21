@@ -6,7 +6,7 @@
     function setColorMode(t){let e=document.documentElement;e.setAttribute("data-color-mode",t);let a=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,s=t;"auto"===t&&(s=a?"dark":"light"),"light"===s?(e.classList.remove("dark"),e.classList.add("light")):(e.classList.remove("light"),e.classList.add("dark"))}
     setColorMode(localStorage._theme||"auto");
   </script><link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=397bb51e" />
-    <link rel="stylesheet" type="text/css" href="../../_static/shibuya.css?v=d3bb9062" />
+    <link rel="stylesheet" type="text/css" href="../../_static/shibuya.css?v=5117e564" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
@@ -101,17 +101,16 @@
       <i class="i-lucide chevron-down"></i>
     </button>
     <div class="nav-versions-choices"><ul><li><a href="/latest">latest</a></li><li><a href="/main">development</a></li></ul></div>
-  </div><div class="sy-head-socials flex items-center">
-    <a href="https://github.com/litestar-org/advanced-alchemy" aria-label="GitHub">
-      <i class="i-simpleicons github"></i>
-    </a>
-  <a href="https://twitter.com/LitestarAPI" aria-label="X (Twitter)">
-    <i class="i-simpleicons x-twitter"></i>
+  </div><div class="sy-head-socials">
+  <a href="https://github.com/litestar-org/advanced-alchemy" aria-label="GitHub">
+    <i class="i-simpleicons github"></i>
   </a>
-    <a href="https://discord.gg/litestar" aria-label="Discord">
-      <i class="i-simpleicons discord"></i>
-    </a>
-</div></div>
+<a href="https://twitter.com/LitestarAPI" aria-label="X (Twitter)">
+  <i class="i-simpleicons x-twitter"></i>
+</a>
+  <a href="https://discord.gg/litestar" aria-label="Discord">
+    <i class="i-simpleicons discord"></i>
+  </a></div></div>
     </div>
     <div class="sy-head-actions flex items-center shrink-0 print:hidden"><button class="js-theme theme-switch flex items-center"
 data-aria-auto="Switch to light color mode"
@@ -232,48 +231,48 @@ data-aria-dark="Switch to auto color mode">
     </button>
     <div class="sy-scrollbar sy-rside-inner px-6 xl:top-16 xl:sticky xl:pl-0 pt-6 pb-4"><div class="localtoc"><h3>On this page</h3><ul>
 <li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSQLAlchemyConfig"><code class="docutils literal notranslate"><span class="pre">GenericSQLAlchemyConfig</span></code></a><ul>
-<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSQLAlchemyConfig.create_engine_callable"><code class="docutils literal notranslate"><span class="pre">GenericSQLAlchemyConfig.create_engine_callable</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSQLAlchemyConfig.session_config"><code class="docutils literal notranslate"><span class="pre">GenericSQLAlchemyConfig.session_config</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSQLAlchemyConfig.session_maker_class"><code class="docutils literal notranslate"><span class="pre">GenericSQLAlchemyConfig.session_maker_class</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSQLAlchemyConfig.connection_string"><code class="docutils literal notranslate"><span class="pre">GenericSQLAlchemyConfig.connection_string</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSQLAlchemyConfig.engine_config"><code class="docutils literal notranslate"><span class="pre">GenericSQLAlchemyConfig.engine_config</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSQLAlchemyConfig.session_maker"><code class="docutils literal notranslate"><span class="pre">GenericSQLAlchemyConfig.session_maker</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSQLAlchemyConfig.__init__"><code class="docutils literal notranslate"><span class="pre">GenericSQLAlchemyConfig.__init__()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSQLAlchemyConfig.engine_instance"><code class="docutils literal notranslate"><span class="pre">GenericSQLAlchemyConfig.engine_instance</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSQLAlchemyConfig.create_all"><code class="docutils literal notranslate"><span class="pre">GenericSQLAlchemyConfig.create_all</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSQLAlchemyConfig.metadata"><code class="docutils literal notranslate"><span class="pre">GenericSQLAlchemyConfig.metadata</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSQLAlchemyConfig.enable_touch_updated_timestamp_listener"><code class="docutils literal notranslate"><span class="pre">GenericSQLAlchemyConfig.enable_touch_updated_timestamp_listener</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSQLAlchemyConfig.engine_config_dict"><code class="docutils literal notranslate"><span class="pre">GenericSQLAlchemyConfig.engine_config_dict</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSQLAlchemyConfig.session_config_dict"><code class="docutils literal notranslate"><span class="pre">GenericSQLAlchemyConfig.session_config_dict</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSQLAlchemyConfig.get_engine"><code class="docutils literal notranslate"><span class="pre">GenericSQLAlchemyConfig.get_engine()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSQLAlchemyConfig.create_session_maker"><code class="docutils literal notranslate"><span class="pre">GenericSQLAlchemyConfig.create_session_maker()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSQLAlchemyConfig.create_engine_callable"><code class="docutils literal notranslate">create_engine_callable</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSQLAlchemyConfig.session_config"><code class="docutils literal notranslate">session_config</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSQLAlchemyConfig.session_maker_class"><code class="docutils literal notranslate">session_maker_class</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSQLAlchemyConfig.connection_string"><code class="docutils literal notranslate">connection_string</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSQLAlchemyConfig.engine_config"><code class="docutils literal notranslate">engine_config</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSQLAlchemyConfig.session_maker"><code class="docutils literal notranslate">session_maker</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSQLAlchemyConfig.__init__"><code class="docutils literal notranslate">__init__()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSQLAlchemyConfig.engine_instance"><code class="docutils literal notranslate">engine_instance</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSQLAlchemyConfig.create_all"><code class="docutils literal notranslate">create_all</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSQLAlchemyConfig.metadata"><code class="docutils literal notranslate">metadata</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSQLAlchemyConfig.enable_touch_updated_timestamp_listener"><code class="docutils literal notranslate">enable_touch_updated_timestamp_listener</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSQLAlchemyConfig.engine_config_dict"><code class="docutils literal notranslate">engine_config_dict</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSQLAlchemyConfig.session_config_dict"><code class="docutils literal notranslate">session_config_dict</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSQLAlchemyConfig.get_engine"><code class="docutils literal notranslate">get_engine()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSQLAlchemyConfig.create_session_maker"><code class="docutils literal notranslate">create_session_maker()</span></code></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSessionConfig"><code class="docutils literal notranslate"><span class="pre">GenericSessionConfig</span></code></a><ul>
-<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSessionConfig.autobegin"><code class="docutils literal notranslate"><span class="pre">GenericSessionConfig.autobegin</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSessionConfig.autoflush"><code class="docutils literal notranslate"><span class="pre">GenericSessionConfig.autoflush</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSessionConfig.bind"><code class="docutils literal notranslate"><span class="pre">GenericSessionConfig.bind</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSessionConfig.binds"><code class="docutils literal notranslate"><span class="pre">GenericSessionConfig.binds</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSessionConfig.class_"><code class="docutils literal notranslate"><span class="pre">GenericSessionConfig.class_</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSessionConfig.expire_on_commit"><code class="docutils literal notranslate"><span class="pre">GenericSessionConfig.expire_on_commit</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSessionConfig.info"><code class="docutils literal notranslate"><span class="pre">GenericSessionConfig.info</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSessionConfig.join_transaction_mode"><code class="docutils literal notranslate"><span class="pre">GenericSessionConfig.join_transaction_mode</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSessionConfig.query_cls"><code class="docutils literal notranslate"><span class="pre">GenericSessionConfig.query_cls</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSessionConfig.twophase"><code class="docutils literal notranslate"><span class="pre">GenericSessionConfig.twophase</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSessionConfig.__init__"><code class="docutils literal notranslate"><span class="pre">GenericSessionConfig.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSessionConfig.autobegin"><code class="docutils literal notranslate">autobegin</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSessionConfig.autoflush"><code class="docutils literal notranslate">autoflush</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSessionConfig.bind"><code class="docutils literal notranslate">bind</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSessionConfig.binds"><code class="docutils literal notranslate">binds</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSessionConfig.class_"><code class="docutils literal notranslate">class_</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSessionConfig.expire_on_commit"><code class="docutils literal notranslate">expire_on_commit</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSessionConfig.info"><code class="docutils literal notranslate">info</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSessionConfig.join_transaction_mode"><code class="docutils literal notranslate">join_transaction_mode</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSessionConfig.query_cls"><code class="docutils literal notranslate">query_cls</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSessionConfig.twophase"><code class="docutils literal notranslate">twophase</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericSessionConfig.__init__"><code class="docutils literal notranslate">__init__()</span></code></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#advanced_alchemy.config.common.GenericAlembicConfig"><code class="docutils literal notranslate"><span class="pre">GenericAlembicConfig</span></code></a><ul>
-<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericAlembicConfig.__init__"><code class="docutils literal notranslate"><span class="pre">GenericAlembicConfig.__init__()</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericAlembicConfig.script_config"><code class="docutils literal notranslate"><span class="pre">GenericAlembicConfig.script_config</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericAlembicConfig.version_table_name"><code class="docutils literal notranslate"><span class="pre">GenericAlembicConfig.version_table_name</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericAlembicConfig.version_table_schema"><code class="docutils literal notranslate"><span class="pre">GenericAlembicConfig.version_table_schema</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericAlembicConfig.script_location"><code class="docutils literal notranslate"><span class="pre">GenericAlembicConfig.script_location</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericAlembicConfig.target_metadata"><code class="docutils literal notranslate"><span class="pre">GenericAlembicConfig.target_metadata</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericAlembicConfig.user_module_prefix"><code class="docutils literal notranslate"><span class="pre">GenericAlembicConfig.user_module_prefix</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericAlembicConfig.render_as_batch"><code class="docutils literal notranslate"><span class="pre">GenericAlembicConfig.render_as_batch</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericAlembicConfig.compare_type"><code class="docutils literal notranslate"><span class="pre">GenericAlembicConfig.compare_type</span></code></a></li>
-<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericAlembicConfig.template_path"><code class="docutils literal notranslate"><span class="pre">GenericAlembicConfig.template_path</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericAlembicConfig.__init__"><code class="docutils literal notranslate">__init__()</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericAlembicConfig.script_config"><code class="docutils literal notranslate">script_config</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericAlembicConfig.version_table_name"><code class="docutils literal notranslate">version_table_name</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericAlembicConfig.version_table_schema"><code class="docutils literal notranslate">version_table_schema</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericAlembicConfig.script_location"><code class="docutils literal notranslate">script_location</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericAlembicConfig.target_metadata"><code class="docutils literal notranslate">target_metadata</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericAlembicConfig.user_module_prefix"><code class="docutils literal notranslate">user_module_prefix</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericAlembicConfig.render_as_batch"><code class="docutils literal notranslate">render_as_batch</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericAlembicConfig.compare_type"><code class="docutils literal notranslate">compare_type</span></code></a></li>
+<li><a class="reference internal" href="#advanced_alchemy.config.common.GenericAlembicConfig.template_path"><code class="docutils literal notranslate">template_path</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -282,7 +281,7 @@ data-aria-dark="Switch to auto color mode">
   <span class="w-8 flex items-center justify-around shrink-0 text-3xl">
     <i class="i-simpleicons github"></i>
   </span>
-  <span class="flex-grow px-2">
+  <span class="flex-grow px-2 break-all">
     <span>litestar-org/advanced-alchemy</span>
     <span class="flex text-sm repo-stats-count">
       <span class="flex items-center pr-3">
