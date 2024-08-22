@@ -640,11 +640,17 @@ data-aria-dark="Switch to auto color mode">
 </span><span data-line="358">    <span class="n">registry</span> <span class="o">=</span> <span class="n">orm_registry</span></div>
 </span><span data-line="359">
 </span><span data-line="360">
-<div class="viewcode-block" id="SQLQuery"><a class="viewcode-back" href="../../reference/base.html#advanced_alchemy.base.SQLQuery">[docs]</a></span><span data-line="361"><span class="k">class</span> <span class="nc">SQLQuery</span><span class="p">(</span><span class="n">BasicAttributes</span><span class="p">,</span> <span class="n">DeclarativeBase</span><span class="p">):</span>
-</span><span data-line="362"><span class="w">    </span><span class="sd">&quot;&quot;&quot;Base for all SQLAlchemy custom mapped objects.&quot;&quot;&quot;</span>
+</span><span data-line="361"><span class="k">class</span> <span class="nc">DefaultBase</span><span class="p">(</span><span class="n">CommonTableAttributes</span><span class="p">,</span> <span class="n">DeclarativeBase</span><span class="p">):</span>
+</span><span data-line="362"><span class="w">    </span><span class="sd">&quot;&quot;&quot;Base for all SQLAlchemy declarative models.  No primary key is added&quot;&quot;&quot;</span>
 </span><span data-line="363">
-</span><span data-line="364">    <span class="n">__allow_unmapped__</span> <span class="o">=</span> <span class="kc">True</span>
-</span><span data-line="365">    <span class="n">registry</span> <span class="o">=</span> <span class="n">orm_registry</span></div>
+</span><span data-line="364">    <span class="n">registry</span> <span class="o">=</span> <span class="n">orm_registry</span>
+</span><span data-line="365">
+</span><span data-line="366">
+<div class="viewcode-block" id="SQLQuery"><a class="viewcode-back" href="../../reference/base.html#advanced_alchemy.base.SQLQuery">[docs]</a></span><span data-line="367"><span class="k">class</span> <span class="nc">SQLQuery</span><span class="p">(</span><span class="n">BasicAttributes</span><span class="p">,</span> <span class="n">DeclarativeBase</span><span class="p">):</span>
+</span><span data-line="368"><span class="w">    </span><span class="sd">&quot;&quot;&quot;Base for all SQLAlchemy custom mapped objects.&quot;&quot;&quot;</span>
+</span><span data-line="369">
+</span><span data-line="370">    <span class="n">__allow_unmapped__</span> <span class="o">=</span> <span class="kc">True</span>
+</span><span data-line="371">    <span class="n">registry</span> <span class="o">=</span> <span class="n">orm_registry</span></div>
 </span></pre></div>
         </article><button class="back-to-top" type="button">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
